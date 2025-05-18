@@ -10,6 +10,7 @@ from django.contrib import messages
 from django.conf import settings
 from django.core.paginator import Paginator
 from django.db.models import Q
+from django.db import IntegrityError
 
 class CourseListView(ListView):
     model = Course
@@ -45,18 +46,29 @@ def enroll_in_course(request):
     if request.method == 'POST':
         form = EnrollmentForm(request.POST)
         if form.is_valid():
+            course = form.cleaned_data['course']
+
+            # Check if already enrolled
+            already_enrolled = Enrollment.objects.filter(student=request.user, course=course).exists()
+            if already_enrolled:
+                messages.warning(request, "You are already enrolled in this course.")
+                return redirect('course-list')
+
+            # Save new enrollment
             enrollment = form.save(commit=False)
             enrollment.student = request.user
             enrollment.save()
-            # 📧 Send confirmation email
+
+            # Send confirmation email
             send_mail(
                 'Enrollment Confirmation',
-                f'Hi {request.user.username}, you have successfully enrolled in {enrollment.course.title}.',
+                f'Hi {request.user.username}, you have successfully enrolled in {course.name}.',
                 settings.DEFAULT_FROM_EMAIL,
                 [request.user.email],
                 fail_silently=True,
             )
-            messages.success(request, f'Enrolled successfully. Confirmation sent to {request.user.email}.')
+
+            messages.success(request, f'Enrolled successfully! Confirmation sent to {request.user.email}.')
             return redirect('course-list')
     else:
         form = EnrollmentForm()

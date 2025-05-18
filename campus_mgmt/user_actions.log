@@ -367,3 +367,325 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'my-submissions' not found. '
 2025-05-17 20:53:07,530 INFO: admin logged in
 2025-05-17 20:53:23,454 INFO: neha logged in
 2025-05-17 20:54:00,022 INFO: admin logged in
+2025-05-18 11:21:26,324 WARNING: Not Found: /favicon.ico
+2025-05-18 11:21:57,488 INFO: admin logged in
+2025-05-18 11:22:21,996 WARNING: Not Found: /accounts/admin/
+2025-05-18 11:24:28,119 WARNING: Not Found: /accounts/models.py/
+2025-05-18 11:25:26,834 INFO: admin logged in
+2025-05-18 11:26:18,731 WARNING: Not Found: /accounts/dashboard/
+2025-05-18 11:26:19,088 WARNING: Not Found: /favicon.ico
+2025-05-18 11:26:37,252 WARNING: Not Found: /accounts/dashboard/
+2025-05-18 11:27:05,907 WARNING: Not Found: /accounts/dashboard/
+2025-05-18 11:28:00,773 WARNING: Not Found: /accounts/dashboard/
+2025-05-18 11:28:56,992 WARNING: Not Found: /accounts/dashboard/
+2025-05-18 11:37:17,555 INFO: admin logged in
+2025-05-18 11:38:50,815 INFO: admin logged in
+2025-05-18 11:40:27,830 INFO: admin logged in
+2025-05-18 11:40:33,033 INFO: Purva logged in
+2025-05-18 11:41:31,728 INFO: Purva enrolled in a course
+2025-05-18 11:41:45,192 INFO: Purva enrolled in a course
+2025-05-18 11:41:56,822 INFO: Purva logged in
+2025-05-18 11:42:12,637 WARNING: Forbidden (CSRF token from POST incorrect.): /accounts/login/
+2025-05-18 11:42:12,642 INFO: Purva logged in
+2025-05-18 11:42:16,548 INFO: Purva logged in
+2025-05-18 11:42:22,977 INFO: Purva logged in
+2025-05-18 11:42:33,992 INFO: admin logged in
+2025-05-18 11:43:13,801 INFO: admin enrolled in a course
+2025-05-18 11:43:18,682 ERROR: Internal Server Error: /courses/enroll/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\decorators.py", line 9, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 54, in enroll_in_course
+    f'Hi {request.user.username}, you have successfully enrolled in {enrollment.course.title}.',
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Course' object has no attribute 'title'
+2025-05-18 11:43:18,696 INFO: admin enrolled in a course
+2025-05-18 11:47:40,371 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 11:47:48,355 ERROR: Internal Server Error: /courses/enroll/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: courses_enrollment.student_id, courses_enrollment.course_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\decorators.py", line 9, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 50, in enroll_in_course
+    enrollment.save()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: courses_enrollment.student_id, courses_enrollment.course_id
+2025-05-18 11:47:48,387 INFO: admin enrolled in a course
+2025-05-18 11:47:54,972 ERROR: Internal Server Error: /courses/enroll/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: courses_enrollment.student_id, courses_enrollment.course_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\decorators.py", line 9, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 50, in enroll_in_course
+    enrollment.save()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: courses_enrollment.student_id, courses_enrollment.course_id
+2025-05-18 11:47:55,066 INFO: admin enrolled in a course
+2025-05-18 11:48:31,287 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 11:53:46,365 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 11:54:10,969 INFO: admin logged in
+2025-05-18 11:54:16,547 INFO: admin logged in
+2025-05-18 11:54:33,711 INFO: admin enrolled in a course
+2025-05-18 11:54:36,793 ERROR: Internal Server Error: /courses/enroll/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: courses_enrollment.student_id, courses_enrollment.course_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\decorators.py", line 9, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 50, in enroll_in_course
+    enrollment.save()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: courses_enrollment.student_id, courses_enrollment.course_id
+2025-05-18 11:54:36,830 INFO: admin enrolled in a course
+2025-05-18 11:56:21,758 INFO: admin logged in
+2025-05-18 11:58:36,635 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 11:58:42,568 INFO: admin logged in
+2025-05-18 11:58:46,012 INFO: admin logged in
+2025-05-18 11:58:55,411 INFO: admin enrolled in a course
+2025-05-18 11:59:03,874 INFO: admin enrolled in a course
+2025-05-18 11:59:23,012 WARNING: Forbidden (CSRF token from POST incorrect.): /accounts/login/
+2025-05-18 11:59:23,016 INFO: admin logged in
+2025-05-18 11:59:29,815 INFO: admin logged in
+2025-05-18 11:59:37,571 INFO: admin logged in
+2025-05-18 12:00:10,187 INFO: admin enrolled in a course
+2025-05-18 12:00:17,751 INFO: admin enrolled in a course
+2025-05-18 12:00:21,250 INFO: admin enrolled in a course
