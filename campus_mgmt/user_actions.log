@@ -689,3 +689,21 @@ django.db.utils.IntegrityError: UNIQUE constraint failed: courses_enrollment.stu
 2025-05-18 12:00:10,187 INFO: admin enrolled in a course
 2025-05-18 12:00:17,751 INFO: admin enrolled in a course
 2025-05-18 12:00:21,250 INFO: admin enrolled in a course
+2025-05-18 12:04:26,824 INFO: admin logged in
+2025-05-18 12:04:44,766 WARNING: Not Found: /accounts/models.py/
+2025-05-18 12:13:55,731 INFO: admin enrolled in a course
+2025-05-18 12:14:00,630 INFO: admin enrolled in a course
+2025-05-18 12:14:15,462 INFO: admin enrolled in a course
+2025-05-18 12:15:22,339 INFO: student1 logged in
+2025-05-18 12:15:46,855 INFO: student1 enrolled in a course
+2025-05-18 12:15:53,974 INFO: student1 enrolled in a course
+2025-05-18 12:15:59,314 INFO: student1 enrolled in a course
+2025-05-18 12:16:02,878 INFO: student1 enrolled in a course
+2025-05-18 12:16:12,755 INFO: student1 enrolled in a course
+2025-05-18 12:16:27,939 INFO: student1 enrolled in a course
+2025-05-18 12:16:27,975 INFO: student1 logged in
+2025-05-18 12:16:36,607 INFO: student1 logged in
+2025-05-18 12:16:40,584 INFO: student1 logged in
+2025-05-18 12:16:51,421 INFO: admin logged in
+2025-05-18 12:16:51,469 INFO: admin enrolled in a course
+2025-05-18 12:16:54,569 INFO: admin enrolled in a course
