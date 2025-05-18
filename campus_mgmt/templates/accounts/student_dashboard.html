@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Student Dashboard{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm p-4 mb-4">
+  <h2 class="mb-3">👋 Welcome, {{ request.user.username }}</h2>
+  <p class="lead">You can enroll in courses and view your results. <strong>Student</strong>.</p>
+  <a href="{% url 'logout' %}" class="btn btn-danger mb-3">Logout</a>
+
+  {% if recent_results %}
+  <div class="alert alert-success">
+    <strong>📚 Recent Grades:</strong>
+    <ul class="list-group list-group-flush mt-2">
+      {% for result in recent_results %}
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        {{ result.assignment.title }}
+        <span class="badge bg-success rounded-pill">{{ result.grade }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% else %}
+  <div class="alert alert-info">No grades available yet.</div>
+  {% endif %}
+</div>
+{% endblock %}

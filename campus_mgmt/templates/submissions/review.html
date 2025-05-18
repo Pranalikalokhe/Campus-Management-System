@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-success">{{ message }}</div>
+  {% endfor %}
+{% endif %}
+
+{% block title %}Review Submissions{% endblock %}
+{% block content %}
+<h2>All Submissions</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Student</th>
+      <th>Assignment</th>
+      <th>Submitted On</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for submission in submissions %}
+    <tr>
+      <td>{{ submission.student.username }}</td>
+      <td>{{ submission.assignment.title }}</td>
+      <td>{{ submission.submitted_on }}</td>
+      <td>{{ submission.grade|default:"Not graded" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}My Results{% endblock %}
+{% block content %}
+<h2>My Results</h2>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Course</th>
+      <th>Average Grade</th>
+      <th>Created On</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in results %}
+    <tr>
+      <td>{{ r.course.name }}</td>
+      <td>{{ r.average_grade }}</td>
+      <td>{{ r.created_on|date:"Y-m-d" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

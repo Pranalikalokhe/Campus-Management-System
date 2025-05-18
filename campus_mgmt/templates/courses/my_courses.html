@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}My Courses{% endblock %}
+{% block content %}
+<h2>My Enrolled Courses</h2>
+<ul class="list-group">
+  {% for e in enrollments %}
+  <li class="list-group-item">
+    {{ e.course.name }} (Enrolled on {{ e.enrolled_on|date:"Y-m-d" }})
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

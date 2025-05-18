@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load form_tags %}
+{% block title %}Upload Assignment{% endblock %}
+
+{% block content %}
+<h2>Upload Assignment</h2>
+<form method="POST" enctype="multipart/form-data" class="border p-4 rounded bg-light shadow-sm">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+
+<script>
+  // Example of dynamic loading assignments (you can extend this if needed)
+  document.addEventListener('DOMContentLoaded', function() {
+    let courseSelect = document.getElementById('id_course');
+    courseSelect.addEventListener('change', function() {
+      fetch(`/submissions/ajax/load-assignments/?course_id=${this.value}`)
+        .then(response => response.json())
+        .then(data => {
+          let assignmentSelect = document.getElementById('id_assignment');
+          assignmentSelect.innerHTML = '';
+          data.forEach(function(item) {
+            let option = document.createElement('option');
+            option.value = item.id;
+            option.textContent = item.title;
+            assignmentSelect.appendChild(option);
+          });
+        });
+    });
+  });
+</script>
+{% endblock %}
