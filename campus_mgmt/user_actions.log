@@ -707,3 +707,1588 @@ django.db.utils.IntegrityError: UNIQUE constraint failed: courses_enrollment.stu
 2025-05-18 12:16:51,421 INFO: admin logged in
 2025-05-18 12:16:51,469 INFO: admin enrolled in a course
 2025-05-18 12:16:54,569 INFO: admin enrolled in a course
+2025-05-18 12:54:32,570 INFO: admin enrolled in a course
+2025-05-18 12:54:36,406 INFO: admin enrolled in a course
+2025-05-18 12:54:40,372 INFO: admin logged in
+2025-05-18 12:54:58,535 INFO: student1 logged in
+2025-05-18 12:55:07,802 INFO: student1 submitted an assignment
+2025-05-18 12:55:44,260 INFO: teacher1 logged in
+2025-05-18 12:57:06,237 INFO: admin logged in
+2025-05-18 12:57:39,031 WARNING: Not Found: /accounts/admin/
+2025-05-18 12:57:58,344 INFO: admin logged in
+2025-05-18 12:59:44,762 INFO: admin enrolled in a course
+2025-05-18 12:59:57,820 INFO: admin logged in
+2025-05-18 13:00:21,526 INFO: admin logged in
+2025-05-18 13:09:13,267 INFO: admin logged in
+2025-05-18 13:10:02,824 INFO: admin logged in
+2025-05-18 13:10:36,977 INFO: Principle logged in
+2025-05-18 13:13:51,055 ERROR: Internal Server Error: /accounts/admin_dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '&&'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 47, in dashboard_view
+    return render(request, 'accounts/admin_dashboard.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '&&' from '&&'
+2025-05-18 13:17:03,090 INFO: Principle logged in
+2025-05-18 13:17:13,561 INFO: Principle logged in
+2025-05-18 13:17:24,421 INFO: admin logged in
+2025-05-18 13:17:46,778 INFO: admin logged in
+2025-05-18 13:17:53,651 INFO: Principle logged in
+2025-05-18 13:18:09,329 INFO: Principle logged in
+2025-05-18 13:18:18,956 INFO: admin logged in
+2025-05-18 13:18:24,325 INFO: admin logged in
+2025-05-18 13:18:30,295 INFO: Principle logged in
+2025-05-18 13:19:06,917 INFO: Principle logged in
+2025-05-18 13:29:45,691 ERROR: Internal Server Error: /accounts/admin_dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 47, in dashboard_view
+    return render(request, 'accounts/admin_dashboard.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 590, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 44: 'if'. Looking for one of: elif, else, endif.
+2025-05-18 13:30:57,687 ERROR: Internal Server Error: /accounts/admin_dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 47, in dashboard_view
+    return render(request, 'accounts/admin_dashboard.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 590, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 44: 'if'. Looking for one of: elif, else, endif.
+2025-05-18 13:31:03,075 ERROR: Internal Server Error: /accounts/admin_dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 47, in dashboard_view
+    return render(request, 'accounts/admin_dashboard.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 590, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 44: 'if'. Looking for one of: elif, else, endif.
+2025-05-18 13:32:58,784 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-18 13:36:01,871 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-18 13:36:30,035 INFO: Principle logged in
+2025-05-18 13:36:33,405 INFO: Principle logged in
+2025-05-18 13:37:37,140 INFO: Principle submitted an assignment
+2025-05-18 13:37:57,619 INFO: Principle submitted an assignment
+2025-05-18 13:38:56,209 INFO: Principle submitted an assignment
+2025-05-18 13:39:53,724 INFO: Principle logged in
+2025-05-18 13:40:00,380 INFO: admin logged in
+2025-05-18 13:40:08,630 INFO: admin enrolled in a course
+2025-05-18 14:09:43,993 INFO: admin enrolled in a course
+2025-05-18 14:11:57,025 INFO: student1 logged in
+2025-05-18 14:14:09,912 INFO: student1 enrolled in a course
+2025-05-18 14:14:13,344 INFO: student1 enrolled in a course
+2025-05-18 14:42:07,672 INFO: student1 logged in
+2025-05-18 14:42:12,832 INFO: student1 logged in
+2025-05-18 14:54:04,845 WARNING: Not Found: /accounts/signals.py/
+2025-05-18 14:54:08,438 WARNING: Not Found: /accounts/signals.py
+2025-05-18 14:56:43,684 INFO: student1 enrolled in a course
+2025-05-18 14:56:44,078 INFO: student1 logged in
+2025-05-18 14:56:50,842 INFO: admin logged in
+2025-05-18 14:56:51,078 INFO: admin enrolled in a course
+2025-05-18 14:58:37,973 INFO: admin logged in
+2025-05-18 14:58:49,142 INFO: student2 logged in
+2025-05-18 14:59:01,164 INFO: student2 logged in
+2025-05-18 14:59:04,992 INFO: student2 logged in
+2025-05-18 14:59:13,797 INFO: admin logged in
+2025-05-18 14:59:29,939 INFO: student2 logged in
+2025-05-18 14:59:37,589 INFO: student2 logged in
+2025-05-18 14:59:45,256 INFO: student2 logged in
+2025-05-18 14:59:59,096 INFO: student2 submitted an assignment
+2025-05-18 15:01:02,459 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-18 15:13:14,517 INFO: student2 submitted an assignment
+2025-05-18 15:14:31,417 INFO: student2 submitted an assignment
+2025-05-18 15:14:54,777 INFO: student2 submitted an assignment
+2025-05-18 15:17:39,384 INFO: teacher1 logged in
+2025-05-18 15:18:34,000 INFO: teacher1 logged in
+2025-05-18 15:18:42,001 INFO: admin logged in
+2025-05-18 15:19:27,769 INFO: student2 logged in
+2025-05-18 15:19:33,599 INFO: student2 logged in
+2025-05-18 15:21:49,815 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 15:22:41,735 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-18 15:29:19,642 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-18 15:30:03,692 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-18 15:30:22,838 INFO: student2 logged in
+2025-05-18 15:30:29,025 INFO: student2 submitted an assignment
+2025-05-18 15:30:46,308 INFO: teacher1 logged in
+2025-05-18 15:32:14,712 INFO: teacher1 enrolled in a course
+2025-05-18 15:32:36,159 INFO: student2 logged in
+2025-05-18 15:32:57,131 INFO: student2 enrolled in a course
+2025-05-18 15:36:38,132 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-18 15:37:39,472 ERROR: Internal Server Error: /courses/enrollments/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 105, in enrollment_dashboard
+    return render(request, 'courses/enrollment_dashboard.html', {'enrollments': enrollments})
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enrollment_dashboard' not found. 'enrollment_dashboard' is not a valid view function or pattern name.
+2025-05-18 15:37:39,655 INFO: student2 enrolled in a course
+2025-05-18 15:40:37,115 ERROR: Internal Server Error: /courses/enrollments/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 105, in enrollment_dashboard
+    return render(request, 'courses/enrollment_dashboard.html', {'enrollments': enrollments})
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enrollment_dashboard' not found. 'enrollment_dashboard' is not a valid view function or pattern name.
+2025-05-18 15:40:37,220 INFO: student2 enrolled in a course
+2025-05-18 15:46:48,180 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enrollment_dashboard' not found. 'enrollment_dashboard' is not a valid view function or pattern name.
+2025-05-18 15:46:48,208 INFO: student2 logged in
+2025-05-18 15:47:04,472 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enrollment_dashboard' not found. 'enrollment_dashboard' is not a valid view function or pattern name.
+2025-05-18 15:47:04,605 INFO: student2 logged in
+2025-05-18 15:48:17,106 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enrollment_dashboard' not found. 'enrollment_dashboard' is not a valid view function or pattern name.
+2025-05-18 15:48:17,141 INFO: student2 logged in
+2025-05-18 15:55:14,557 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 15:55:32,359 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 15:55:42,119 ERROR: Internal Server Error: /courses/enrollments/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return render(request, 'courses/enrollment_dashboard.html', context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enrollment_dashboard' not found. 'enrollment_dashboard' is not a valid view function or pattern name.
+2025-05-18 15:55:42,164 INFO: student2 enrolled in a course
+2025-05-18 15:55:44,274 ERROR: Internal Server Error: /courses/enrollments/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return render(request, 'courses/enrollment_dashboard.html', context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enrollment_dashboard' not found. 'enrollment_dashboard' is not a valid view function or pattern name.
+2025-05-18 15:55:44,394 INFO: student2 enrolled in a course
+2025-05-18 15:55:46,661 INFO: student2 logged in
+2025-05-18 15:55:49,826 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enrollment_dashboard' not found. 'enrollment_dashboard' is not a valid view function or pattern name.
+2025-05-18 15:55:49,866 INFO: student2 logged in
+2025-05-18 15:57:02,044 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-18 15:58:58,533 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 15:59:20,106 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 16:00:12,939 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-18 16:01:31,408 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-18 16:01:37,066 INFO: student2 enrolled in a course
+2025-05-18 16:01:37,067 WARNING: Not Found: /courses/enrollments/
+2025-05-18 16:01:37,953 INFO: student2 enrolled in a course
+2025-05-18 16:01:37,954 WARNING: Not Found: /courses/enrollments/
+2025-05-18 16:01:40,303 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course-list' not found. 'course-list' is not a valid view function or pattern name.
+2025-05-18 16:01:40,399 INFO: student2 logged in
+2025-05-18 16:02:13,937 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-18 16:09:27,430 INFO: student2 enrolled in a course
+2025-05-18 16:09:27,431 WARNING: Not Found: /courses/enrollments/
+2025-05-18 16:09:28,993 INFO: student2 enrolled in a course
+2025-05-18 16:09:28,993 WARNING: Not Found: /courses/enrollments/
+2025-05-18 16:09:42,593 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course-list' not found. 'course-list' is not a valid view function or pattern name.
+2025-05-18 16:09:42,629 INFO: student2 logged in
+2025-05-18 16:09:48,744 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course-list' not found. 'course-list' is not a valid view function or pattern name.
+2025-05-18 16:09:48,792 INFO: student2 logged in
+2025-05-18 16:11:51,822 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-18 16:15:42,099 INFO: student2 logged in
+2025-05-18 16:15:56,809 INFO: student2 logged in
+2025-05-18 16:16:06,906 ERROR: Internal Server Error: /courses/dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'courses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return redirect('courses:enrollment_dashboard')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'courses' is not a registered namespace
+2025-05-18 18:53:44,192 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-18 18:54:04,531 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-18 19:15:42,355 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-18 21:12:48,438 INFO: student2 logged in
+2025-05-18 21:12:55,652 INFO: student2 submitted an assignment
+2025-05-18 21:13:06,733 INFO: student2 submitted an assignment
+2025-05-18 21:13:07,605 ERROR: Internal Server Error: /courses/dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'courses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return redirect('courses:enrollment_dashboard')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'courses' is not a registered namespace
+2025-05-18 21:13:13,981 ERROR: Internal Server Error: /courses/dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'courses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return redirect('courses:enrollment_dashboard')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'courses' is not a registered namespace
+2025-05-18 21:23:08,636 INFO: student2 logged in
+2025-05-18 21:23:09,578 WARNING: Not Found: /favicon.ico
+2025-05-18 21:23:15,593 INFO: student2 logged in
+2025-05-18 21:23:18,153 ERROR: Internal Server Error: /courses/dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'courses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return redirect('courses:enrollment_dashboard')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'courses' is not a registered namespace
+2025-05-18 21:26:25,036 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-18 21:28:27,485 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course-list' not found. 'course-list' is not a valid view function or pattern name.
+2025-05-18 21:28:27,557 INFO: student2 logged in
+2025-05-18 21:29:17,644 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course-list' not found. 'course-list' is not a valid view function or pattern name.
+2025-05-18 21:29:17,693 INFO: student2 logged in
+2025-05-18 21:29:22,193 ERROR: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\views.py", line 29, in login_view
+    return render(request, 'accounts/login.html')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course-list' not found. 'course-list' is not a valid view function or pattern name.
+2025-05-18 21:29:22,238 INFO: student2 logged in
+2025-05-18 21:34:20,711 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-18 21:35:20,543 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-18 21:35:47,430 INFO: student2 logged in
+2025-05-18 21:36:07,248 INFO: student2 logged in
+2025-05-18 21:36:31,295 INFO: student2 logged in
+2025-05-18 21:36:38,433 INFO: student1 logged in
+2025-05-18 21:45:41,551 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 21:47:54,694 ERROR: Internal Server Error: /courses/dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return render(request, 'courses/dashboard.html', context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: courses/dashboard.html
+2025-05-18 21:52:47,030 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 21:53:07,553 ERROR: Internal Server Error: /courses/dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return render(request, 'courses/enrollment.html', context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: courses/enrollment.html
+2025-05-18 21:53:09,594 ERROR: Internal Server Error: /courses/dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return render(request, 'courses/enrollment.html', context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: courses/enrollment.html
+2025-05-18 21:53:14,117 ERROR: Internal Server Error: /courses/dashboard/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 111, in enrollment_dashboard
+    return render(request, 'courses/enrollment.html', context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: courses/enrollment.html
+2025-05-18 21:55:57,015 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-18 21:56:35,538 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-18 21:59:04,256 INFO: teacher1 logged in
+2025-05-18 22:02:19,504 INFO: teacher1 logged in
+2025-05-18 22:02:26,771 INFO: admin logged in
+2025-05-18 22:03:03,914 INFO: student1 logged in
+2025-05-18 22:03:08,467 INFO: student1 submitted an assignment
+2025-05-18 22:03:24,537 INFO: student1 submitted an assignment
+2025-05-18 22:03:29,467 INFO: student1 logged in
+2025-05-18 22:03:46,866 INFO: admin logged in
+2025-05-18 22:05:16,122 INFO: teacher1 logged in
+2025-05-18 22:15:12,267 INFO: teacher1 logged in
+2025-05-18 22:15:19,936 INFO: teacher1 logged in
+2025-05-18 22:15:30,486 INFO: student1 logged in
+2025-05-18 22:15:37,409 INFO: student1 submitted an assignment
+2025-05-18 22:15:47,480 INFO: student1 submitted an assignment
+2025-05-18 22:16:02,799 INFO: teacher1 logged in
+2025-05-18 22:18:27,141 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-18 22:18:38,544 INFO: student1 logged in
+2025-05-18 22:18:46,478 INFO: student1 submitted an assignment
+2025-05-18 22:18:57,016 INFO: student1 submitted an assignment
+2025-05-18 22:20:38,035 INFO: student1 submitted an assignment
+2025-05-18 22:21:13,931 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-18 22:24:14,323 INFO: student1 submitted an assignment
+2025-05-18 22:24:28,026 INFO: student1 submitted an assignment
+2025-05-18 22:24:47,140 INFO: teacher1 logged in
+2025-05-18 22:25:23,837 INFO: teacher1 logged in
+2025-05-18 22:25:30,074 INFO: admin logged in
+2025-05-18 22:31:06,722 INFO: teacher1 logged in
+2025-05-19 12:32:12,639 INFO: teacher1 logged in
+2025-05-19 12:32:13,378 WARNING: Not Found: /favicon.ico
+2025-05-19 12:32:20,123 INFO: teacher1 logged in
+2025-05-19 12:46:57,892 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-19 13:02:45,131 INFO: teacher1 logged in
+2025-05-19 13:02:52,598 INFO: teacher1 logged in
+2025-05-19 13:06:06,289 INFO: student1 logged in
+2025-05-19 13:16:03,130 INFO: E:\Campus Management System\campus_mgmt\api\serializers.py changed, reloading.
+2025-05-19 13:56:36,173 INFO: teacher1 logged in
+2025-05-19 14:42:23,635 INFO: teacher1 logged in
+2025-05-19 14:42:42,765 INFO: teacher1 logged in
+2025-05-19 14:43:32,520 INFO: teacher1 logged in
+2025-05-19 14:43:40,133 INFO: admin logged in
+2025-05-19 14:59:26,406 WARNING: Unauthorized: /api/courses/
+2025-05-19 15:01:29,153 WARNING: Unauthorized: /api/courses/
+2025-05-19 15:33:42,025 WARNING: Unauthorized: /api/courses/
+2025-05-19 15:36:35,335 WARNING: Unauthorized: /api/courses/
+2025-05-19 15:37:42,181 WARNING: Unauthorized: /api/courses/
+2025-05-19 15:38:49,467 WARNING: Unauthorized: /api/courses/
+2025-05-19 15:40:51,341 WARNING: Unauthorized: /api/courses/
+2025-05-19 15:45:37,510 INFO: admin logged in
+2025-05-19 16:07:21,087 WARNING: Unauthorized: /api/
+2025-05-19 16:08:44,694 WARNING: Unauthorized: /api/courses/
+2025-05-19 16:19:17,307 WARNING: Unauthorized: /api/courses/
+2025-05-19 16:20:26,841 WARNING: Unauthorized: /api/courses/
+2025-05-19 16:36:26,533 INFO: E:\Campus Management System\campus_mgmt\courses\models.py changed, reloading.

@@ -8,18 +8,25 @@ from accounts.decorators import role_required
 from django.http import JsonResponse
 from .models import Assignment
 
+ 
 @login_required
 def assignment_upload(request):
     if request.method == 'POST':
         form = SubmissionForm(request.POST, request.FILES)
+        print("POST request received")
         if form.is_valid():
+            print("Form is valid")
             submission = form.save(commit=False)
             submission.student = request.user
             submission.save()
+            print("Saved Submission:", submission)
             return redirect('my-submissions')
+        else:
+            print("Form errors:", form.errors)  # This will print form validation errors
     else:
         form = SubmissionForm()
     return render(request, 'submissions/upload.html', {'form': form})
+
 
 @login_required
 def my_submissions(request):
@@ -55,7 +62,9 @@ def create_assignment(request):
 @login_required
 @role_required(['teacher'])
 def submission_review(request):
-    submissions = Submission.objects.all()
+    # Only get submissions related to the teacher's courses
+    submissions = Submission.objects.filter(assignment__course__teacher=request.user)
+
     if request.method == 'POST':
         submission_id = request.POST.get('submission_id')
         grade = request.POST.get('grade')
@@ -69,6 +78,6 @@ def submission_review(request):
 
 @login_required
 def ajax_load_assignments(request):
-    course_id = request.GET.get('course_id')
-    assignments = Assignment.objects.filter(course_id=course_id).values('id', 'title')
-    return JsonResponse(list(assignments), safe=False)
+     course_id = request.GET.get('course_id')
+     assignments = Assignment.objects.filter(course_id=course_id).values('id', 'title')
+     return JsonResponse(list(assignments), safe=False)

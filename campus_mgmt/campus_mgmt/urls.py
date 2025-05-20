@@ -21,12 +21,16 @@ from django.views.generic import RedirectView
 from django.conf.urls.static import static
 
 urlpatterns = [
-     path('', RedirectView.as_view(url='/accounts/login/')), 
+    path('', RedirectView.as_view(url='/accounts/login/')), 
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
+    path('courses/', include(('courses.urls', 'courses'), namespace='courses')),
     path('courses/', include('courses.urls')),
     path('submissions/', include('submissions.urls')),
     path('api/', include('api.urls')), 
+    path('api/', include('courses.urls')),
+    #path('api-token-auth/', obtain_auth_token),
 ]
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
