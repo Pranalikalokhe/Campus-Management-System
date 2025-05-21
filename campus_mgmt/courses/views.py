@@ -161,7 +161,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from .models import Course, Enrollment
-
+@login_required
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
 def enroll_course(request):

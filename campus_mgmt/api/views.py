@@ -1,4 +1,5 @@
 from rest_framework import generics, permissions
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication, TokenAuthentication
 from courses.models import Course, Enrollment
 from submissions.models import Assignment, Submission
 from .serializers import (
@@ -19,12 +20,15 @@ class AssignmentCreateAPIView(generics.CreateAPIView):
     def perform_create(self, serializer):
         serializer.save()
 
-class EnrollmentCreateAPIView(generics.CreateAPIView):
-    serializer_class = EnrollmentSerializer
-    permission_classes = [permissions.IsAuthenticated]
+from rest_framework.authentication import SessionAuthentication, TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
-    def perform_create(self, serializer):
-        serializer.save(student=self.request.user)
+class EnrollmentCreateAPIView(generics.CreateAPIView):
+    queryset = Enrollment.objects.all()
+    serializer_class = EnrollmentSerializer
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [SessionAuthentication, TokenAuthentication]  # <-- Add this
+
 
 class SubmissionCreateAPIView(generics.CreateAPIView):
     serializer_class = SubmissionSerializer
@@ -33,10 +37,8 @@ class SubmissionCreateAPIView(generics.CreateAPIView):
     def perform_create(self, serializer):
         serializer.save(student=self.request.user)
 
-# views.py
-
+# extra JSON view
 from django.http import JsonResponse
-from courses.models import Course
 
 def course_detail_api(request, pk):
     try:
