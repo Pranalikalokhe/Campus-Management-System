@@ -34,7 +34,6 @@ urlpatterns = [
     path('submissions/', include('submissions.urls')),
     path('api/', include('api.urls')), 
     path('api/', include('courses.urls')),
-    #path('api-token-auth/', obtain_auth_token),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api-token-auth/', obtain_auth_token),

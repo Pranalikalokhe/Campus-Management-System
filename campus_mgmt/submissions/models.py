@@ -22,18 +22,7 @@ class Submission(models.Model):
     def __str__(self):
         return f"{self.student.username} - {self.assignment.title}"
 
-# class Result(models.Model):
-#     student = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={'role': 'student'})
-#     course = models.ForeignKey(Course, on_delete=models.CASCADE)
-#     average_grade = models.FloatField()
-#     created_on = models.DateTimeField(auto_now_add=True)
 
-#     class Meta:
-#         unique_together = ('student', 'course')
-
-#     def __str__(self):
-#         return f"{self.student.username} - {self.course.name}: {self.average_grade}"
-# models.py
 
 from django.db import models
 from django.conf import settings  # ✅ import settings for AUTH_USER_MODEL
