@@ -19,6 +19,11 @@ from django.urls import path, include
 from django.conf import settings
 from django.views.generic import RedirectView
 from django.conf.urls.static import static
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     path('', RedirectView.as_view(url='/accounts/login/')), 
@@ -30,6 +35,10 @@ urlpatterns = [
     path('api/', include('api.urls')), 
     path('api/', include('courses.urls')),
     #path('api-token-auth/', obtain_auth_token),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api-token-auth/', obtain_auth_token),
+    
 ]
 
 if settings.DEBUG:

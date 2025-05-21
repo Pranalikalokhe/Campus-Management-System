@@ -2292,3 +2292,951 @@ django.template.exceptions.TemplateDoesNotExist: courses/enrollment.html
 2025-05-19 16:19:17,307 WARNING: Unauthorized: /api/courses/
 2025-05-19 16:20:26,841 WARNING: Unauthorized: /api/courses/
 2025-05-19 16:36:26,533 INFO: E:\Campus Management System\campus_mgmt\courses\models.py changed, reloading.
+2025-05-20 11:22:43,463 WARNING: Not Found: /favicon.ico
+2025-05-20 11:23:28,942 INFO: admin logged in
+2025-05-20 11:23:42,486 INFO: admin submitted an assignment
+2025-05-20 11:24:26,902 INFO: admin logged in
+2025-05-20 11:25:09,370 INFO: admin logged in
+2025-05-20 11:25:11,446 INFO: admin logged in
+2025-05-20 11:25:28,753 INFO: teacher1 logged in
+2025-05-20 11:26:26,314 INFO: student1 logged in
+2025-05-20 11:26:31,438 INFO: student1 submitted an assignment
+2025-05-20 11:26:37,413 INFO: student1 submitted an assignment
+2025-05-20 11:26:38,967 INFO: student1 submitted an assignment
+2025-05-20 11:26:43,109 INFO: student1 submitted an assignment
+2025-05-20 11:30:55,261 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 11:31:07,113 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 11:31:21,943 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 11:31:34,549 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 11:31:36,767 INFO: student1 submitted an assignment
+2025-05-20 11:31:36,878 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 11:31:38,375 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 11:42:59,939 INFO: student1 logged in
+2025-05-20 11:43:03,067 WARNING: Not Found: /courses/assignments/upload/
+2025-05-20 11:44:04,430 INFO: student1 submitted an assignment
+2025-05-20 11:44:04,430 WARNING: Not Found: /courses/assignments/upload/
+2025-05-20 11:45:01,020 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 11:53:53,585 INFO: student1 logged in
+2025-05-20 11:53:58,147 WARNING: Unauthorized: /api/courses/
+2025-05-20 11:55:24,257 WARNING: Unauthorized: /api/courses/
+2025-05-20 11:55:43,153 WARNING: Unauthorized: /api/courses/
+2025-05-20 11:57:10,164 WARNING: Unauthorized: /api/courses/
+2025-05-20 11:57:42,561 WARNING: Unauthorized: /api/courses/
+2025-05-20 11:59:20,579 WARNING: Unauthorized: /api/courses/
+2025-05-20 11:59:26,327 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:00:47,813 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:01:10,513 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:01:29,999 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:03:28,444 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-20 12:03:37,119 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-20 12:05:08,453 WARNING: Unauthorized: /api/token/
+2025-05-20 12:06:34,964 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:07:11,358 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:08:27,743 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:08:34,730 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:08:46,327 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:09:58,984 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:10:43,886 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:11:49,461 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:14:22,868 WARNING: Unauthorized: /api/token/
+2025-05-20 12:15:07,351 INFO: student1 logged in
+2025-05-20 12:15:17,943 WARNING: Unauthorized: /api/token/
+2025-05-20 12:17:59,373 ERROR: Internal Server Error: /api/courses/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `title` is not valid for model `Course` in `api.serializers.CourseSerializer`.
+2025-05-20 12:18:27,072 ERROR: Internal Server Error: /api/courses/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `title` is not valid for model `Course` in `api.serializers.CourseSerializer`.
+2025-05-20 12:19:35,414 INFO: student1 submitted an assignment
+2025-05-20 12:19:35,415 WARNING: Not Found: /courses/assignments/upload/
+2025-05-20 12:19:41,941 WARNING: Unauthorized: /courses/api/courses/
+2025-05-20 12:20:06,277 INFO: student1 logged in
+2025-05-20 12:20:19,808 INFO: student1 logged in
+2025-05-20 12:31:48,361 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 12:34:17,491 WARNING: Unauthorized: /api/courses/
+2025-05-20 12:36:30,287 ERROR: Internal Server Error: /api/courses/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `title` is not valid for model `Course` in `api.serializers.CourseSerializer`.
+2025-05-20 12:41:41,068 INFO: E:\Campus Management System\campus_mgmt\api\serializers.py changed, reloading.
+2025-05-20 12:42:10,225 INFO: E:\Campus Management System\campus_mgmt\courses\models.py changed, reloading.
+2025-05-20 12:42:16,603 INFO: student1 logged in
+2025-05-20 12:42:28,002 WARNING: Unauthorized: /api/courses/
+2025-05-20 13:03:35,115 WARNING: Not Found: /api/enroll/
+2025-05-20 13:03:52,768 WARNING: Not Found: /api/enroll/
+2025-05-20 13:04:05,841 WARNING: Unauthorized: /api/courses/
+2025-05-20 13:04:50,400 WARNING: Not Found: /api/enroll/
+2025-05-20 13:06:44,354 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 13:09:07,698 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 13:11:09,799 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 13:11:44,324 INFO: admin enrolled in a course
+2025-05-20 13:11:44,324 WARNING: Bad Request: /courses/api/enroll/
+2025-05-20 13:12:53,327 INFO: student1 logged in
+2025-05-20 13:13:03,984 INFO: admin logged in
+2025-05-20 13:13:07,978 INFO: admin enrolled in a course
+2025-05-20 13:14:11,973 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 13:14:57,399 INFO: E:\Campus Management System\campus_mgmt\api\serializers.py changed, reloading.
+2025-05-20 13:15:05,455 ERROR: Internal Server Error: /courses/api/enroll/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: courses_enrollment.student_id, courses_enrollment.course_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\courses\views.py", line 234, in perform_create
+    serializer.save(student=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\rest_framework\serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: courses_enrollment.student_id, courses_enrollment.course_id
+2025-05-20 13:15:05,505 INFO: admin enrolled in a course
+2025-05-20 13:16:49,653 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 13:20:32,533 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 13:21:25,969 INFO: admin enrolled in a course
+2025-05-20 13:21:25,969 WARNING: Bad Request: /courses/api/enroll/
+2025-05-20 13:22:03,649 INFO: admin enrolled in a course
+2025-05-20 13:22:03,650 WARNING: Bad Request: /courses/api/enroll/
+2025-05-20 13:26:03,871 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 13:27:10,027 INFO: admin logged in
+2025-05-20 13:27:26,481 INFO: student1 logged in
+2025-05-20 13:27:29,029 INFO: student1 logged in
+2025-05-20 13:28:16,655 INFO: student1 submitted an assignment
+2025-05-20 13:28:38,393 INFO: student1 submitted an assignment
+2025-05-20 13:30:14,789 INFO: teacher1 logged in
+2025-05-20 13:30:35,739 WARNING: Forbidden (CSRF token from POST incorrect.): /accounts/login/
+2025-05-20 13:30:35,760 INFO: teacher1 logged in
+2025-05-20 13:30:38,416 WARNING: Unauthorized: /courses/api/courses/
+2025-05-20 13:30:40,485 INFO: teacher1 enrolled in a course
+2025-05-20 13:30:40,670 INFO: teacher1 logged in
+2025-05-20 13:30:51,648 INFO: teacher1 logged in
+2025-05-20 13:31:15,093 INFO: student1 logged in
+2025-05-20 13:31:15,296 INFO: student1 logged in
+2025-05-20 13:31:45,686 INFO: student1 logged in
+2025-05-20 13:32:02,467 INFO: admin logged in
+2025-05-20 13:34:00,104 INFO: admin logged in
+2025-05-20 13:34:36,299 INFO: admin submitted an assignment
+2025-05-20 13:35:30,659 INFO: student1 logged in
+2025-05-20 13:36:12,201 WARNING: Not Found: /accounts/
+2025-05-20 13:36:18,795 INFO: student1 logged in
+2025-05-20 13:36:58,330 INFO: student1 submitted an assignment
+2025-05-20 13:37:18,346 INFO: teacher1 logged in
+2025-05-20 13:37:32,638 INFO: teacher1 logged in
+2025-05-20 13:45:52,207 WARNING: Unauthorized: /courses/api/courses/
+2025-05-20 13:45:53,460 ERROR: Internal Server Error: /api/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 25: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+2025-05-20 13:46:32,904 INFO: student1 logged in
+2025-05-20 13:46:36,124 ERROR: Internal Server Error: /api/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 25: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+2025-05-20 13:49:16,829 INFO: student1 logged in
+2025-05-20 13:49:29,515 INFO: student1 logged in
+2025-05-20 13:49:34,358 ERROR: Internal Server Error: /api/2/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enroll-course' not found. 'enroll-course' is not a valid view function or pattern name.
+2025-05-20 13:58:58,783 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-20 14:03:20,835 WARNING: Unauthorized: /courses/api/courses/
+2025-05-20 14:03:24,102 INFO: student1 logged in
+2025-05-20 14:03:30,009 ERROR: Internal Server Error: /api/2/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'enroll-course' not found. 'enroll-course' is not a valid view function or pattern name.
+2025-05-20 14:59:34,350 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 15:00:18,840 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-20 15:01:58,393 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 15:03:52,386 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:04:01,194 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:06:27,849 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 15:06:37,196 INFO: student1 logged in
+2025-05-20 15:06:37,651 WARNING: Unauthorized: /courses/api/courses/
+2025-05-20 15:06:44,314 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:06:54,807 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:07:07,395 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:07:15,023 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:09:41,686 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 15:10:36,287 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:10:50,990 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:10:58,556 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:13:39,044 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 15:14:06,912 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:14:11,928 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:14:37,385 INFO: student1 logged in
+2025-05-20 15:14:48,935 INFO: student1 logged in
+2025-05-20 15:14:53,747 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:16:30,063 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:16:43,387 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:16:55,786 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:21:09,598 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:24:43,051 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:24:49,928 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:24:59,782 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:25:04,136 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:31:51,277 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-20 15:33:07,039 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-20 15:33:12,279 WARNING: Unauthorized: /courses/api/courses/
+2025-05-20 15:33:16,380 WARNING: Not Found: /api/2/
+2025-05-20 15:33:16,599 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:33:38,834 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-20 15:33:43,439 WARNING: Not Found: /api/2/
+2025-05-20 15:33:43,565 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:33:45,158 WARNING: Not Found: /api/2/
+2025-05-20 15:33:45,333 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:35:07,712 WARNING: Not Found: /api/2/
+2025-05-20 15:35:14,068 WARNING: Not Found: /api/2/
+2025-05-20 15:35:39,573 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-20 15:36:12,651 WARNING: Not Found: /api/2/
+2025-05-20 15:36:13,885 WARNING: Not Found: /api/2/
+2025-05-20 15:36:13,975 WARNING: Not Found: /api/2/
+2025-05-20 15:37:26,723 WARNING: Not Found: /api/2/
+2025-05-20 15:37:26,833 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:37:52,410 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-20 15:37:58,651 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 15:37:59,983 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 15:43:18,428 INFO: student1 logged in
+2025-05-20 15:43:19,742 WARNING: Unauthorized: /courses/api/courses/
+2025-05-20 15:43:22,554 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:06:40,996 INFO: admin logged in
+2025-05-20 18:06:41,772 WARNING: Not Found: /favicon.ico
+2025-05-20 18:06:45,311 INFO: admin logged in
+2025-05-20 18:06:52,321 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:12:31,278 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:21:25,866 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 18:21:28,123 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:26:52,118 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-20 18:27:39,558 INFO: admin logged in
+2025-05-20 18:28:02,506 INFO: admin logged in
+2025-05-20 18:28:07,851 ERROR: Internal Server Error: /api/2/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 519, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 540, in extend_nodelist
+    raise self.error(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: {% extends 'base.html' %} must be the first tag in 'courses/course_detail.html'.
+2025-05-20 18:32:29,302 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:32:32,654 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:52:09,375 INFO: E:\Campus Management System\campus_mgmt\api\views.py changed, reloading.
+2025-05-20 18:52:19,776 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:52:24,012 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:52:31,671 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 18:52:40,863 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:54:21,088 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\settings.py changed, reloading.
+2025-05-20 18:55:08,568 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-20 18:55:37,566 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\urls.py changed, reloading.
+2025-05-20 18:56:13,659 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:56:17,199 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 18:56:22,614 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:56:25,713 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:56:28,064 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:58:59,044 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:59:09,028 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 18:59:22,571 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-20 18:59:24,689 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 19:29:13,947 INFO: admin logged in
+2025-05-20 19:29:18,730 INFO: admin logged in
+2025-05-20 19:33:45,259 INFO: admin enrolled in a course
+2025-05-20 19:33:45,262 WARNING: Bad Request: /courses/api/enroll/
+2025-05-20 19:35:34,003 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 19:35:55,321 INFO: admin enrolled in a course
+2025-05-20 19:37:06,557 INFO: admin enrolled in a course
+2025-05-20 19:37:06,557 WARNING: Bad Request: /courses/api/enroll/
+2025-05-20 19:41:49,546 WARNING: Bad Request: /api-token-auth/
+2025-05-20 19:42:42,811 INFO: student1 enrolled in a course
+2025-05-20 19:42:42,812 WARNING: Bad Request: /courses/api/enroll/
+2025-05-20 19:43:04,596 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 19:43:07,553 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 19:43:24,704 INFO: admin enrolled in a course
+2025-05-20 19:43:42,901 INFO: admin enrolled in a course
+2025-05-20 19:44:27,313 INFO: student2 enrolled in a course
+2025-05-20 19:45:30,801 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 19:45:52,559 INFO: student2 logged in
+2025-05-20 19:46:02,589 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 20:29:51,616 WARNING: Not Found: /favicon.ico
+2025-05-20 20:29:52,850 INFO: student2 enrolled in a course
+2025-05-20 20:29:53,117 INFO: student2 logged in
+2025-05-20 20:31:15,938 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 20:33:58,507 INFO: student2 enrolled in a course
+2025-05-20 20:33:58,642 INFO: student2 logged in
+2025-05-20 20:35:38,453 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 20:36:17,146 INFO: E:\Campus Management System\campus_mgmt\courses\urls.py changed, reloading.
+2025-05-20 20:36:27,911 INFO: student2 logged in
+2025-05-20 20:36:34,743 INFO: student2 logged in
+2025-05-20 20:36:50,982 INFO: student2 submitted an assignment
+2025-05-20 20:36:56,230 INFO: student2 submitted an assignment
+2025-05-20 20:39:54,975 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 20:40:27,385 INFO: student2 submitted an assignment
+2025-05-20 20:42:59,397 INFO: teacher1 logged in
+2025-05-20 21:00:21,967 INFO: E:\Campus Management System\campus_mgmt\courses\views.py changed, reloading.
+2025-05-20 21:05:59,164 INFO: E:\Campus Management System\campus_mgmt\courses\models.py changed, reloading.
+2025-05-20 21:07:00,149 INFO: E:\Campus Management System\campus_mgmt\submissions\models.py changed, reloading.
+2025-05-20 21:43:47,199 WARNING: Not Found: /favicon.ico
+2025-05-20 21:44:06,977 INFO: teacher1 logged in
+2025-05-20 21:44:21,430 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 21:45:13,742 INFO: student1 logged in
+2025-05-20 21:45:18,155 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 21:45:21,380 INFO: student1 submitted an assignment
+2025-05-20 21:48:47,195 INFO: E:\Campus Management System\campus_mgmt\submissions\apps.py changed, reloading.
+2025-05-20 21:52:13,092 INFO: E:\Campus Management System\campus_mgmt\accounts\signals.py changed, reloading.
+2025-05-20 21:52:28,738 WARNING: Forbidden (CSRF token from POST incorrect.): /admin/login/
+2025-05-20 21:52:28,747 INFO: student1 logged in
+2025-05-20 21:52:31,519 INFO: student1 logged in
+2025-05-20 21:52:36,337 INFO: admin logged in
+2025-05-20 21:52:36,451 INFO: admin enrolled in a course
+2025-05-20 21:52:38,071 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 21:52:41,122 WARNING: Forbidden (CSRF token from POST incorrect.): /submissions/review/
+2025-05-20 21:53:18,078 INFO: teacher1 logged in
+2025-05-20 21:53:56,831 INFO: student1 logged in
+2025-05-20 21:54:00,495 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-20 21:55:22,897 INFO: E:\Campus Management System\campus_mgmt\submissions\signals.py changed, reloading.
+2025-05-20 21:55:42,236 INFO: E:\Campus Management System\campus_mgmt\submissions\apps.py changed, reloading.
+2025-05-20 21:58:13,624 WARNING: Forbidden (CSRF token from POST incorrect.): /submissions/review/
+2025-05-20 21:59:15,758 INFO: teacher1 logged in
+2025-05-20 22:00:25,714 INFO: teacher1 logged in
+2025-05-20 22:26:06,226 INFO: E:\Campus Management System\campus_mgmt\campus_mgmt\settings.py changed, reloading.
+2025-05-20 22:26:14,838 INFO: teacher1 logged in
+2025-05-20 22:26:15,858 WARNING: Not Found: /favicon.ico
+2025-05-20 22:26:18,943 INFO: teacher1 logged in
+2025-05-20 22:33:41,596 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-20 22:36:44,099 INFO: E:\Campus Management System\campus_mgmt\courses\models.py changed, reloading.
+2025-05-20 22:36:54,516 INFO: teacher1 logged in
+2025-05-20 22:37:03,417 INFO: teacher1 logged in
+2025-05-20 22:37:08,710 INFO: teacher1 logged in
+2025-05-20 22:37:29,300 INFO: teacher1 logged in
+2025-05-20 22:40:55,103 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-20 22:45:24,366 INFO: teacher1 logged in
+2025-05-20 22:45:32,129 INFO: admin logged in
+2025-05-20 22:45:32,290 INFO: admin enrolled in a course
+2025-05-20 22:45:34,999 INFO: admin logged in
+2025-05-20 22:45:39,184 INFO: admin enrolled in a course
+2025-05-20 22:46:09,210 INFO: teacher1 logged in
+2025-05-20 22:48:12,910 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-20 22:51:53,294 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-21 11:03:39,748 WARNING: Not Found: /favicon.ico
+2025-05-21 11:04:00,487 INFO: teacher1 logged in
+2025-05-21 11:07:08,841 WARNING: Not Found: /favicon.ico
+2025-05-21 11:07:22,551 INFO: student1 submitted an assignment
+2025-05-21 11:07:35,406 INFO: student1 submitted an assignment
+2025-05-21 11:07:53,619 INFO: student1 logged in
+2025-05-21 11:08:15,979 INFO: teacher1 logged in
+2025-05-21 11:09:26,566 INFO: student2 enrolled in a course
+2025-05-21 11:09:26,566 WARNING: Bad Request: /courses/api/enroll/
+2025-05-21 11:10:10,535 INFO: student2 enrolled in a course
+2025-05-21 11:13:24,675 ERROR: Internal Server Error: /submissions/review/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 398, in getreply
+    line = self.file.readline(_MAXLINE + 1)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\decorators.py", line 9, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\submissions\views.py", line 73, in submission_review
+    submission.save()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1023, in save_base
+    post_save.send(
+    ~~~~~~~~~~~~~~^
+        sender=origin,
+        ^^^^^^^^^^^^^^
+    ...<4 lines>...
+        using=using,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "E:\Campus Management System\campus_mgmt\submissions\models.py", line 49, in send_grading_notification
+    send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [instance.student.email])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 136, in send_messages
+    sent = self._send(message)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 155, in _send
+    self.connection.sendmail(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        from_email, recipients, message.as_bytes(linesep="\r\n")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 881, in sendmail
+    (code, resp) = self.rcpt(each, rcpt_options)
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 554, in rcpt
+    return self.getreply()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 401, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed: "
+                                 + str(e))
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-05-21 11:14:00,220 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json

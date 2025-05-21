@@ -32,3 +32,21 @@ class SubmissionCreateAPIView(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         serializer.save(student=self.request.user)
+
+# views.py
+
+from django.http import JsonResponse
+from courses.models import Course
+
+def course_detail_api(request, pk):
+    try:
+        course = Course.objects.get(pk=pk)
+        data = {
+            "id": course.id,
+            "name": course.name,
+            "description": course.description,
+            "teacher": course.teacher.username,
+        }
+        return JsonResponse(data)
+    except Course.DoesNotExist:
+        return JsonResponse({"error": "Course not found"}, status=404)

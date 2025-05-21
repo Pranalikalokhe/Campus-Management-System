@@ -1,19 +1,23 @@
 {% extends 'base.html' %}
 {% block title %}Courses{% endblock %}
+
 {% block content %}
 <h2>Courses</h2>
+
 <form method="GET" class="d-flex mb-3">
-    <input type="text" name="q" value="{{ request.GET.q }}" placeholder="Search courses..." class="form-control me-2">
-    <button type="submit" class="btn btn-outline-primary">Search</button>
+  <input type="text" name="q" value="{{ request.GET.q }}" placeholder="Search courses..." class="form-control me-2">
+  <button type="submit" class="btn btn-outline-primary">Search</button>
 </form>
 
 {% for course in courses %}
-  <div class="card mb-3">
-    <div class="card-body">
-      <h5>{{ course.name }}</h5>
-      <p>{{ course.description }}</p>
+  <a href="{% url 'course-detail' course.pk %}" class="text-decoration-none text-dark">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5>{{ course.name }}</h5>
+        <p>{{ course.description }}</p>
+      </div>
     </div>
-  </div>
+  </a>
 {% empty %}
   <p>No courses found.</p>
 {% endfor %}
@@ -35,4 +39,5 @@
     {% endif %}
   </ul>
 </nav>
+
 {% endblock %}

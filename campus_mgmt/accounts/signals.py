@@ -1,29 +1,3 @@
-# from django.db.models.signals import post_save
-# from django.dispatch import receiver
-# from django.core.mail import send_mail
-# from django.conf import settings
-# from django.contrib.auth import get_user_model
-# from submissions.models import Submission
-
-# User = get_user_model()
-
-# @receiver(post_save, sender=User)
-# def assign_default_role(sender, instance, created, **kwargs):
-#     if created and not instance.role:
-#         instance.role = 'student'
-#         instance.save()
-
-# @receiver(post_save, sender=Submission)
-# def notify_student_on_grade(sender, instance, **kwargs):
-#     if instance.grade:
-#         send_mail(
-#             '📢 Your Submission Has Been Graded',
-#             f'Hi {instance.student.username},\n\nYour submission for \"{instance.assignment.title}\" has been graded.\nYour Grade: {instance.grade}\n\nRegards,\nCampus Management System',
-#             settings.DEFAULT_FROM_EMAIL,
-#             [instance.student.email],
-#             fail_silently=True,
-#         )
-
 from django.conf import settings
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -32,6 +6,26 @@ from rest_framework.authtoken.models import Token
 User = settings.AUTH_USER_MODEL
 
 @receiver(post_save, sender=User)
-def create_auth_token(sender, instance=None, created=False, **kwargs):
+def create_auth_token_and_assign_role(sender, instance=None, created=False, **kwargs):
     if created:
+        # Create auth token
         Token.objects.create(user=instance)
+
+        # Assign default role if not set
+        # If your User model has a 'role' field:
+        if not getattr(instance, 'role', None):
+            instance.role = 'student'  # or whatever your default role is
+            instance.save()
+
+
+# from django.conf import settings
+# from django.db.models.signals import post_save
+# from django.dispatch import receiver
+# from rest_framework.authtoken.models import Token
+
+# User = settings.AUTH_USER_MODEL
+
+# @receiver(post_save, sender=User)
+# def create_auth_token(sender, instance=None, created=False, **kwargs):
+#     if created:
+#         Token.objects.create(user=instance)

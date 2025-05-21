@@ -1,8 +1,97 @@
 {% extends 'base.html' %}
 {% block title %}Course Details{% endblock %}
+
 {% block content %}
+
 <h2>{{ course.name }}</h2>
 <p>{{ course.description }}</p>
 <p><strong>Teacher:</strong> {{ course.teacher.username }}</p>
-<a href="{% url 'enroll-course' %}" class="btn btn-success">Enroll in this Course</a>
-{% endblock %}
+
+{% if user.is_authenticated %}
+    <button id="enrollBtn">Enroll</button>
+{% else %}
+    <p>Please <a href="{% url 'login' %}">log in</a> to enroll in this course.</p>
+{% endif %}
+
+<meta name="csrf-token" content="{{ csrf_token }}">
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const enrollBtn = document.getElementById("enrollBtn");
+        if (enrollBtn) {
+            enrollBtn.addEventListener("click", function () {
+                const csrfToken = document.querySelector('[name=csrf-token]').content;
+
+                fetch("/courses/api/enroll/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRFToken": csrfToken
+                    },
+                    body: JSON.stringify({
+                        course_id: {{ course.id }}
+                    }),
+                    credentials: "same-origin"
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => { throw err });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    alert(data.message || "Enrolled successfully!");
+                })
+                .catch((error) => {
+                    console.error("Enrollment error:", error);
+                    alert(error.message || "Something went wrong.");
+                });
+            });
+        }
+    });
+</script>
+
+{% endblock %} 
+
+{% comment %} {% extends 'base.html' %}
+{% block content %}
+  <h2>{{ course.title }}</h2>
+  <p>{{ course.description }}</p>
+  <p><strong>Teacher:</strong> {{ course.teacher }}</p>
+
+  <button id="enroll-btn" data-course-id="{{ course.id }}">Enroll</button>
+
+  <script>
+    document.querySelectorAll(".enroll-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const courseId = button.getAttribute("data-course-id");
+    const token = localStorage.getItem("token");
+
+    fetch("/courses/api/enroll/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Token ${token}`,  // ✅ Important
+        "X-CSRFToken": getCookie("csrftoken")
+      },
+      body: JSON.stringify({ course: courseId }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          return response.json().then(data => { throw data; });
+        }
+        return response.json();
+      })
+      .then((data) => {
+        alert("Enrolled successfully!");
+        window.location.reload();
+      })
+      .catch((error) => {
+        alert(error.detail || "Something went wrong.");
+      });
+  });
+});
+
+  </script>
+{% endblock %} {% endcomment %}
+

@@ -81,3 +81,26 @@ def ajax_load_assignments(request):
      course_id = request.GET.get('course_id')
      assignments = Assignment.objects.filter(course_id=course_id).values('id', 'title')
      return JsonResponse(list(assignments), safe=False)
+
+from django.contrib import messages
+from django.shortcuts import render, redirect, get_object_or_404
+from submissions.models import Submission
+from django.contrib.auth.decorators import login_required
+
+@login_required
+def grade_submission(request, submission_id):
+    submission = get_object_or_404(Submission, id=submission_id)
+
+    if request.method == 'POST':
+        grade = request.POST.get('grade')
+        if grade:
+            submission.grade = grade
+            submission.save()  # This triggers the signal and email
+
+            # ✅ Add message for success
+            messages.success(request, "Grade saved and email sent to student successfully!")
+
+            # ✅ Redirect to same page so alert shows after reload
+            return redirect('grade_submission', submission_id=submission.id)
+
+    return render(request, 'submissions/grade_submission.html', {'submission': submission})

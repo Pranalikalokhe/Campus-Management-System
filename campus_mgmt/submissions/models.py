@@ -35,3 +35,16 @@ class Result(models.Model):
 
     def __str__(self):
         return f"{self.student.username} - {self.course.name}: {self.average_grade}"
+    
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.core.mail import send_mail
+from django.conf import settings
+
+@receiver(post_save, sender=Submission)
+def send_grading_notification(sender, instance, created, **kwargs):
+    if not created and instance.grade:  # Only send when grade is updated
+        subject = f"Assignment Graded: {instance.assignment.title}"
+        message = f"Hello {instance.student.username},\n\nYour assignment '{instance.assignment.title}' has been graded. You received: {instance.grade}\n\nCheck for feedback if available.\n\nRegards,\nCampus Mgmt Team"
+        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [instance.student.email])
+    

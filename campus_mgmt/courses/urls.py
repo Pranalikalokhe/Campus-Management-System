@@ -23,6 +23,8 @@
 
 from django.urls import path
 from . import views
+#from .views import AssignmentUploadView
+from .views import enroll_course
 
 urlpatterns = [
     # Web views
@@ -35,5 +37,8 @@ urlpatterns = [
     path('api/courses/', views.CourseListAPIView.as_view(), name='api-course-list'),
     path('api/assignments/upload/', views.AssignmentCreateAPIView.as_view(), name='api-assignment-upload'),
     path('api/enroll/', views.EnrollmentCreateAPIView.as_view(), name='api-enroll'),
+    path('enroll/', views.enroll_course, name='enroll-course'),
+    path('api/enroll/', enroll_course, name='enroll-course-api'),
     path('api/submissions/', views.SubmissionCreateAPIView.as_view(), name='api-submission'),
+    #path('assignments/upload/', AssignmentUploadView.as_view(), name='assignment-upload'),
 ]
