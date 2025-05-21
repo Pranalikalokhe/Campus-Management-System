@@ -3240,3 +3240,426 @@ Traceback (most recent call last):
                                  + str(e))
 smtplib.SMTPServerDisconnected: Connection unexpectedly closed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
 2025-05-21 11:14:00,220 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 11:17:00,067 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 11:19:09,921 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 11:19:47,592 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 11:23:43,457 INFO: teacher1 logged in
+2025-05-21 11:24:07,516 INFO: student1 logged in
+2025-05-21 11:24:21,345 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-21 11:24:26,047 INFO: student1 submitted an assignment
+2025-05-21 11:29:59,786 INFO: E:\Campus Management System\campus_mgmt\submissions\models.py changed, reloading.
+2025-05-21 11:32:14,890 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-21 11:33:21,880 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-21 11:34:15,579 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-21 11:35:05,239 INFO: student1 submitted an assignment
+2025-05-21 11:35:28,119 INFO: student1 logged in
+2025-05-21 11:35:30,984 INFO: student1 submitted an assignment
+2025-05-21 11:35:46,547 INFO: student1 submitted an assignment
+2025-05-21 11:36:12,544 INFO: teacher1 logged in
+2025-05-21 11:37:21,737 INFO: student1 logged in
+2025-05-21 11:39:25,010 INFO: student1 logged in
+2025-05-21 11:39:52,700 INFO: admin logged in
+2025-05-21 11:40:54,312 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-21 11:41:28,658 INFO: admin submitted an assignment
+2025-05-21 11:41:40,838 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 11:41:44,327 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 11:41:53,302 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 12:03:00,574 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-21 12:11:15,824 INFO: admin submitted an assignment
+2025-05-21 12:11:35,079 INFO: student1 logged in
+2025-05-21 12:13:40,619 INFO: E:\Campus Management System\campus_mgmt\submissions\views.py changed, reloading.
+2025-05-21 12:14:24,419 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-21 12:14:30,669 INFO: student1 logged in
+2025-05-21 12:14:41,793 INFO: student1 submitted an assignment
+2025-05-21 12:14:57,077 INFO: student1 submitted an assignment
+2025-05-21 12:15:11,721 INFO: student1 logged in
+2025-05-21 12:15:25,852 INFO: teacher1 logged in
+2025-05-21 12:17:19,909 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-21 12:17:25,618 ERROR: Internal Server Error: /submissions/results/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\submissions\views.py", line 140, in result_view
+    return render(request, 'submissions/results.html', {'results': results})
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submission-review' not found. 'submission-review' is not a valid view function or pattern name.
+2025-05-21 12:19:22,128 ERROR: Internal Server Error: /submissions/results/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\submissions\views.py", line 140, in result_view
+    return render(request, 'submissions/results.html', {'results': results})
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'review_submissions' not found. 'review_submissions' is not a valid view function or pattern name.
+2025-05-21 12:19:55,748 ERROR: Internal Server Error: /submissions/results/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\submissions\views.py", line 140, in result_view
+    return render(request, 'submissions/results.html', {'results': results})
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'review_submissions' not found. 'review_submissions' is not a valid view function or pattern name.
+2025-05-21 12:21:35,003 INFO: E:\Campus Management System\campus_mgmt\submissions\urls.py changed, reloading.
+2025-05-21 12:23:49,337 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 12:24:02,464 ERROR: Internal Server Error: /submissions/review/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\decorators.py", line 9, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\submissions\views.py", line 133, in review_submissions
+    return redirect('submission-review')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submission-review' not found. 'submission-review' is not a valid view function or pattern name.
+2025-05-21 12:24:07,690 ERROR: Internal Server Error: /submissions/review/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\accounts\decorators.py", line 9, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\submissions\views.py", line 133, in review_submissions
+    return redirect('submission-review')
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submission-review' not found. 'submission-review' is not a valid view function or pattern name.
+2025-05-21 12:24:07,855 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 12:24:16,800 WARNING: Forbidden (CSRF token from POST incorrect.): /admin/login/
+2025-05-21 12:24:16,810 INFO: teacher1 logged in
+2025-05-21 12:24:26,927 WARNING: Forbidden (CSRF token from POST incorrect.): /admin/login/
+2025-05-21 12:24:26,932 INFO: teacher1 logged in
+2025-05-21 12:24:44,877 INFO: teacher1 logged in
+2025-05-21 12:25:04,124 INFO: admin logged in
+2025-05-21 12:26:09,256 INFO: admin submitted an assignment
+2025-05-21 12:27:16,526 INFO: admin logged in
+2025-05-21 12:27:33,834 INFO: student1 logged in
+2025-05-21 12:28:54,757 INFO: admin logged in
+2025-05-21 12:32:51,679 INFO: E:\Campus Management System\campus_mgmt\submissions\models.py changed, reloading.
+2025-05-21 12:41:57,327 INFO: student1 submitted an assignment
+2025-05-21 12:42:46,922 INFO: student1 submitted an assignment
+2025-05-21 12:43:05,465 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 12:44:50,552 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 12:48:04,552 INFO: student1 submitted an assignment
+2025-05-21 12:48:06,626 INFO: student1 submitted an assignment
+2025-05-21 12:48:08,938 INFO: student1 submitted an assignment
+2025-05-21 12:48:45,458 INFO: teacher1 logged in
+2025-05-21 12:50:39,057 INFO: E:\Campus Management System\campus_mgmt\submissions\models.py changed, reloading.
+2025-05-21 12:50:48,865 INFO: E:\Campus Management System\campus_mgmt\submissions\models.py changed, reloading.
+2025-05-21 12:51:19,639 ERROR: Internal Server Error: /admin/submissions/result/add/
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: submissions_result.created_on
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\admin\options.py", line 1894, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\contrib\admin\options.py", line 1314, in save_model
+    obj.save()
+    ~~~~~~~~^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Campus Management System\campus_mgmt\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: submissions_result.created_on
+2025-05-21 12:55:25,656 INFO: student1 logged in
+2025-05-21 13:05:12,906 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 13:06:03,350 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 13:06:17,318 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 13:07:03,841 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 13:07:20,051 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-21 13:09:54,546 INFO: student2 logged in
+2025-05-21 13:10:03,913 WARNING: Unauthorized: /courses/api/enroll/
+2025-05-21 13:11:25,197 WARNING: Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-21 13:11:32,029 WARNING: Unauthorized: /courses/api/enroll/

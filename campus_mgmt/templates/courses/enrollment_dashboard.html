@@ -7,7 +7,6 @@
     <tr>
       <th>Course</th>
       <th>Teacher</th>
-      <th>Enrolled On</th>
     </tr>
   </thead>
   <tbody>
@@ -15,7 +14,7 @@
       <tr>
         <td>{{ enrollment.course.name }}</td>
         <td>{{ enrollment.course.teacher.username }}</td>
-        <td>{{ enrollment.created_at }}</td>
+        {% comment %} <td>{{ enrollment.created_at }}</td> {% endcomment %}
       </tr>
     {% endfor %}
   </tbody>
